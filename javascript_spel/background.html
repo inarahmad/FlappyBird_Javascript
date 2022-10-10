@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Flyg iväg, fågel! - Bakgrund och Fördjupning</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+        <!-- Navbar (placed at the bottom of the header image) -->
+        <nav class="w3-bar w3-light-grey w3-round ">
+            <a href="index.html" class="w3-bar-item w3-button">Hem</a>
+            <a href="background.html" class="w3-bar-item w3-button">Bakgrund och Fördjupning</a>
+            <a href="implementation.html" class="w3-bar-item w3-button">Genomförande</a>
+        </nav>
+    </header>
+
+    <!-- Page content -->
+    <main class="w3-center w3-content">
+        <h2>Flyg iväg, fågel!</h2>
+        <p style="text-align: left">Ideen som jag vill visa här är att bygga en enkel spel liksom Flappy Bird. <br> Fördjupning som jag har valt är JavaScript med Canvas. Baserad på den här <a href='https://stackoverflow.com/questions/38901951/canvas-vs-svg-for-games'>sidan som diskuterar canvas vs svg för spel</a>, canvas ska ge snabbare respons och passar bättre för webbspel. Att animera SVG är bättre med CSS tänker jag. Här finns exempel nedan</p>
+        <br>
+        <svg class="w3-center w3-content" viewBox="0 0 254.33 598.15" style="max-width:200px"><desc>Här är animation av spelet</desc>
+
+  <circle id="ball" cx="228.16" cy="228.82" r="26"/>
+
+  <polygon class="construction" points="242.8 12.84 230.6 181.34 227.98 181.34 225.9 181.34 213.7 12.84 211.74 12.97 223.93 181.34 219.01 181.34 219.01 189.25 223.47 204.6 227.98 204.6 232.48 204.6 236.95 189.25 236.95 181.34 232.57 181.34 244.77 12.97 242.8 12.84"/>
+
+  <rect class="construction" x="202.16" width="52" height="12.27"/>
+
+  <path class="construction" d="M202.33,343.76V598.15h52V343.76Zm5.41,8.1,17.87,19.82-17.87,19.83Zm1.51-3.71h37.59L228,369Zm.86,46.12L228,374.38,246,394.27Zm36.16,4.38L228,418.86l-18.22-20.21Zm-38.53,3.08,17.87,19.83-17.87,19.82Zm2.37,42.41L228,424.25,246,444.14Zm36.16,4.38L228,468.74l-18.22-20.22Zm-38.53,3.08,17.87,19.83-17.87,19.83ZM210.11,494,228,474.12,246,494Zm36.16,4.38L228,518.61,209.82,498.4Zm-38.53,3.08,17.87,19.82-17.87,19.83Zm2.37,42.41L228,524,246,543.89Zm36.16,4.38L228,568.48l-18.22-20.21Zm-38.53,3.08,17.87,19.83L207.74,591ZM228,573.87,246,593.76H210.11Zm2.43-2.69,18.44-20.46v40.91Zm0-49.88,18.44-20.45v40.91Zm0-49.87L248.91,451v40.9Zm0-49.87,18.44-20.46V442Zm0-49.88,18.44-20.45v40.91Z"/>
+
+  <g class="bird">
+  <path id="bird-body" d="M31.57,262.74c13.29,0,24.06,9.89,24.06,22.1S44.86,307,31.57,307s-24-9.9-24-22.11,10.77-22.1,24.05-22.1"/>
+
+  <path id="bird-eye" d="M46,276.66a1.73,1.73,0,0,0-2.24-.82,5.87,5.87,0,0,0-2,1.77c-.15.18-.31.51-.13.67"/>
+
+  <path id="bird-mouth" d="M48.66,282.09c-.21-.8.7-1.34,1.4-1.46a16,16,0,0,1,10,1.64,1.1,1.1,0,0,1,.66.67,1.33,1.33,0,0,1-.31,1c-2.52,3.63-6.78,4.58-10.68,5.3"/>
+
+  <path id="bird-wing" d="M16.34,287.18c2.32,1,3.35,6.24,11,3.69a7.45,7.45,0,0,0,3-1.82,7,7,0,0,0,1.81-4,15.88,15.88,0,0,0-.16-4.35,13.69,13.69,0,0,0-1.68-5.33c-1.73-2.8-5-4.48-8.31-5.45a22.29,22.29,0,0,0-11.79-.44,13.48,13.48,0,0,0-8.92,6.87,4.44,4.44,0,0,0-.48,2.93A4.06,4.06,0,0,0,4.75,282c1.73,0,3.51-1.87,3-1.55a3,3,0,0,0-1.06,1.33,4.54,4.54,0,0,0-.21,3.45,3.94,3.94,0,0,0,2.58,2.4,6.21,6.21,0,0,0,3.88-.45,8.26,8.26,0,0,0,4.81-4.07"/>
+  </g>
+</svg>
+        <p><a href='https://www.freepik.com/free-vector/engineer-on-construction-site_1577683.htm'>Konstruktion bild ritades av Makyzz</a><br><a href='https://www.freepik.com/free-vector/forest-silhouettes_794745.htm'>Skog bakgrund ritades av Freepik</a><br><a href='https://www.zapsplat.com/?s=flappy+bird'>Ljud är från Zapsplat</a></p>
+    </main>
+</body>
+</html>

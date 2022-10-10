@@ -1,0 +1,41 @@
+#ball,#bird-body{fill:#f6a312;}
+.construction{fill:#595959;}
+.bird{stroke:#595959;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}
+#bird-eye{fill:none;}
+#bird-wing,#bird-mouth{fill:#faf11d;}
+
+
+#bird-wing{
+	animation: flap 1s infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes flap{
+  0%   {transform: rotate(0deg)}
+  25%  {transform: rotate(-0.5deg)}
+  50%  {transform: rotate(-0.5deg)}
+  100% {transform: rotate(0deg)}
+}
+
+.construction, #ball{
+	animation: swipe 8s infinite;
+}
+@keyframes swipe{
+  0%   {transform: translate(0px, 0px); visibility: 1}
+  80% {transform: translate(-200px, 0px); visibility: 1}
+  81% {transform: translate(0px, 0px);visibility: 1}
+  90% {transform: translate(0px, 0px); visibility: 0; opacity: 0}
+  100% {transform: translate(0px, 0px); visibility: 1}
+}
+
+.bird{
+	animation: fly 1.5s infinite;
+	animation-timing-function: ease-out;
+}
+@keyframes fly{
+	0%   {transform: translate(0px, 0px)}
+  20%  {transform: translate(0px, 10px)}
+  40% {transform: translate(0px, -5px)}
+  60%  {transform: translate(0px, 10px)}
+  80% {transform: translate(0px, -5px)}
+}

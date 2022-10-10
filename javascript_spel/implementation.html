@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Flyg iväg, fågel! - Genomförande</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+        <!-- Navbar (placed at the bottom of the header image) -->
+        <nav class="w3-bar w3-light-grey w3-round ">
+            <a href="index.html" class="w3-bar-item w3-button">Hem</a>
+            <a href="background.html" class="w3-bar-item w3-button">Bakgrund och Fördjupning</a>
+            <a href="implementation.html" class="w3-bar-item w3-button">Genomförande</a>
+        </nav>
+    </header>
+
+    <!-- Page content -->
+    <main class="w3-content" style="align-items: left">
+        <h2>Flyg iväg, fågel!</h2>
+        <p>Jag utvecklar det med loop och matte funktion att generera random hinderobjekt. Flygande objektet placeras på en position i början, sedan det går ner liksom det finns gravity på det. Man som spelar klickar på arrow så att objektet går upp lite.
+            Målet av spelet att förhindra så många konstruktion objekt som möjligt.</p>
+        <h3>Här finns beskrivningen hur spelet logik funkar</h3>
+        <ol style="text-align: left">
+            <li>Rita fågeln, hinder och bakgrund sedan sparar dem i transparent png</li>
+            <li>Placera fågeln, hinder och bakgrund (ge gap mellan de två hinderna)</li>
+            <li>Ändra hinder X position så att de kommer närmare till fågeln</li>
+            <li>Ge matte formula som randomiserar hinder Y position</li>
+            <li>Ändra fågel position så att fågeln kommer ner liksom att det finns gravity</li>
+            <li>Ge Event listener som flytter fågeln gå upp och ge ljud till det</li>
+            <li>Ge krav så att poäng räknas när hinder undvikas och ge ljud till det</li>
+            <li>Ge krav så att spelet stoppas när fågeln faller ner eller när hinder inte undvikas</li>
+        </ol>
+        <h3>När spelet stoppas:</h3>
+        <ul style="text-align: left">
+            <li>Fågeln faller ner</li>
+            <li>Fågel X position ÄR SOM Hinder X position OCH fågel Y position ÄR SOM toppen av hinder som ligger ner</li>
+            <li>Fågel X position ÄR SOM Hinder X position OCH fågel Y position ÄR SOM botten av hinder som hänger upp</li>
+        </ul>
+        <h3>Bilder och media</h3>
+        <p>Bilderna är från Freepik och behöver attribution för att använda, länken finns också på sidan. Bild av fågel ritades jag själv. Ljud på spelet kommer från Zapsplat, fri att använda för school projekt.</p>
+        <h3>Validering av kod och test för olika webbläsare</h3>
+        <p>Medan utveckling kollade jag med Inspect tools på Chrome. Jag kollade javascript kod på jsHint och html på validator.nu, sedam kollade jag koden i Chrome och IE.</p>
+        <h3>Utvecklings möjligheter och Reflektioner</h3>
+        <p>Att ha curve linje för gravity så det ser ut att fågeln dropppar och hoppar som Flappy bird spel.
+            <br>Coding is fun yet challenging. Alla elementer ska vara i light size, annars kommer man ha problem med response. Jag fick ett problem när användade ljud med stor file size.
+        </p>
+    </main>
+</body>
+</html>
